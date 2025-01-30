@@ -24,7 +24,6 @@ const start = () => t = setInterval(() => {
   update();
 }, 1000);
 
-const play = async (sound) => { try { await sound.play(); } catch (e) { console.error(`Error playing sound: ${sound.id}`, e); } };
 
 const lap = () => {
   const lapTime = `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;

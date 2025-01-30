@@ -5,7 +5,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background: linear-gradient(135deg, #0059ff, #2a5298);
+  background: linear-gradient(135deg, #252525, #37393e);
   color: #fff;
   transition: background 10s ease;
 }
@@ -14,19 +14,19 @@ body {
   text-align: center;
   background: rgba(255, 255, 255, 0.1);
   padding: 30px;
-  border-radius: 20px;
+  border-radius: 100px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
 }
 
 .analog-clock {
   width: 150px;
   height: 150px;
-  border: 5px solid #00ffcc;
+  border: 5px solid #f4f6f6;
   border-radius: 50%;
   position: relative;
   margin: 0 auto 20px;
-  box-shadow: 0 0 20px #00ffcc, inset 0 0 10px #00ffcc;
+  box-shadow: 0 0 20px #f1f4f3, inset 0 0 10px #f4f6f6;
 }
 
 .hand {
@@ -61,14 +61,14 @@ body {
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  background: #00ffcc;
+  background: #d5f0eb;
   color: #1e3c72;
   font-weight: bold;
   transition: all 0.3s ease;
   box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
 }
 
-.controls button:hover { background: #1e3c72; color: #00ffcc; transform: scale(1.1); box-shadow: 0 0 20px rgba(0, 255, 204, 0.8); }
+.controls button:hover { background: #1e3c72; color: #e1f9f4; transform: scale(1.1); box-shadow: 0 0 20px rgba(0, 255, 204, 0.8); }
 
 #stop { background: #ff4d4d; box-shadow: 0 0 10px rgba(255, 77, 77, 0.5); }
 #stop:hover { background: #f55151; box-shadow: 0 0 20px rgba(255, 77, 77, 0.8); }
