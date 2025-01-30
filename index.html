@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="stopwatch-container">
+      <div class="analog-clock">
+        <div class="hand hour-hand"></div>
+        <div class="hand minute-hand"></div>
+        <div class="hand second-hand"></div>
+      </div>
+      <div class="watch-face">
+        <div class="display">
+          <span id="hours">00</span>:<span id="minutes">00</span>:<span
+            id="seconds"
+            >00</span
+          >
+        </div>
+      </div>
+      <div class="controls">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+        <button id="lap">Lap</button>
+      </div>
+      <div class="lap-times">
+        <h3>Laps</h3>
+        <ul id="lap-list"></ul>
+      </div>
+    </div>
+    <audio id="click-sound" src="click.mp3" preload="auto"></audio>
+    <audio id="lap-sound" src="lap.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>

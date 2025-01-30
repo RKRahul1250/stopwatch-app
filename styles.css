@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #0059ff, #2a5298);
+  color: #fff;
+  transition: background 10s ease;
+}
+
+.stopwatch-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.analog-clock {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #00ffcc;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto 20px;
+  box-shadow: 0 0 20px #00ffcc, inset 0 0 10px #00ffcc;
+}
+
+.hand {
+  position: absolute;
+  background: #00ffcc;
+  transform-origin: bottom center;
+  transition: transform 0.5s ease;
+}
+
+.hour-hand { width: 4px; height: 40px; top: 35px; left: 73px; }
+.minute-hand { width: 3px; height: 60px; top: 15px; left: 73.5px; }
+.second-hand { width: 2px; height: 70px; top: 5px; left: 74px; background: #120d0d; }
+
+.display {
+  font-size: 2.5em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.controls button {
+  font-size: 1em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background: #00ffcc;
+  color: #1e3c72;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+}
+
+.controls button:hover { background: #1e3c72; color: #00ffcc; transform: scale(1.1); box-shadow: 0 0 20px rgba(0, 255, 204, 0.8); }
+
+#stop { background: #ff4d4d; box-shadow: 0 0 10px rgba(255, 77, 77, 0.5); }
+#stop:hover { background: #f55151; box-shadow: 0 0 20px rgba(255, 77, 77, 0.8); }
+
+#reset { background: #858484; box-shadow: 0 0 10px rgba(51, 51, 51, 0.5); }
+#reset:hover { background: #8b8a8a; box-shadow: 0 0 20px rgba(51, 51, 51, 0.8); }
+
+.lap-times {
+  margin-top: 20px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.lap-times ul { list-style: none; padding: 0; }
+.lap-times li { padding: 5px; background: rgba(255, 255, 255, 0.1); margin: 5px 0; border-radius: 5px; }
